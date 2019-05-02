@@ -1,4 +1,4 @@
-# mediaLab5
+#Laboratorinis Nr. 5
 
 # DONE:
 	- Place all laboratory on the github.io.
