@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8/>
+<title>Lab 1. Introduction to HTML5 and HLS</title>
+  
+  <!--
+  Embed needed js libraries for video player. Note, libraries needs to be hosted on your server, under /js folder.
+   -->
+  <!--
+  Location for CSS if needed. Note, cascade style sheets needs to be hosted on your server, under /css folder.
+  -->
+
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+<body>
+  <h1>My first HLS player</h1>
+
+  <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="640" height="268">
+    <source src="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8" type="application/x-mpegURL">
+  </video-js>
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
+  <script>
+    var player = videojs('my_video_1');
+  </script>
+  
+</body>
+</html>
